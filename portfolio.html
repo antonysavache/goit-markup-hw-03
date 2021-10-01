@@ -10,14 +10,14 @@
     <link rel="stylesheet" href="./css/styles-portfolio.css" />
   </head>
   <body>
-    <header class="head">
+    <header class="header section">
       <div class="container header-info">
         <nav class="menu">
         <a class="webstudio" href="./index.html"
         >Web<span class="colorstudio-top">Studio</span></a>
         <ul class="ul-menu">
           <li class="li-head-button">
-            <a class="head-button" href="./index.html">Студия</a>
+            <a class="head-button " href="./index.html">Студия</a>
           </li>
           <li class="li-head-button">
             <a class="head-button active" href="./portfolio.html">Портфолио</a>
@@ -27,9 +27,20 @@
           </li>
         </ul>
         </nav>
+
         <div class="div-contacts">
-        <a class="contacts-top mail" href="mailto:info@devstudio.com">info@devstudio.com</a>
-        <a class="contacts-top" href="tel:+380961111111">+38 096 111 11 11</a>
+        <a class="contacts-top mail" href="mailto:info@devstudio.com">
+          <svg class="icons-contacts">
+            <use class="test" href="./img/symbol-defs.svg#icon-mail">
+            </use>
+          </svg>
+          info@devstudio.com</a>
+        <a class="contacts-top" href="tel:+380961111111">
+          <svg class="icons-contacts">
+            <use class="test" href="./img/symbol-defs.svg#icon-phone-norm">
+            </use>
+          </svg>
+          +38 096 111 11 11</a>
         </div>
       </div>
     </header>
@@ -81,7 +92,7 @@
             <p class="p-pics">Дизайн</p>
           </a>
         </li>
-        <li class="box box3">
+        <li class="box">
           <a>
             <img
               src="./img/seafood.jpg"
@@ -161,10 +172,10 @@
 
     <footer class="podval">
       <div class="container footer-con">
-        <div class="test">
+        <div class="div-button-and-adress">
           <a class="lowwebstudio" href="./index.html"
           >Web<span class="webstudio-low">Studio</span></a>
-        </div>
+       
       <address>
         <ul>
           <li class="addr-prop">
@@ -182,6 +193,40 @@
           </li>
         </ul>
       </address>
+      </div>
+      <div class="join-us">
+      <p class="p-join-us">ПРИСОЕДИНЯЙТЕСЬ</p>
+                  <ul class="social-links-list-footer">
+                    <li>
+                        <a class="buttons-social-links-footer" href="">
+                            <svg class="icons-social-links-footer">
+                                <use href="./img/symbol-defs.svg#icon-instagram"></use>
+                              </svg>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="buttons-social-links-footer" href="">
+                            <svg class="icons-social-links-footer">
+                                <use href="./img/symbol-defs.svg#icon-twitter"></use>
+                              </svg>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="buttons-social-links-footer" href="">
+                            <svg class="icons-social-links-footer">
+                                <use href="./img/symbol-defs.svg#icon-fbook"></use>
+                              </svg>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="buttons-social-links-footer" href="">
+                            <svg class="icons-social-links-footer">
+                                <use href="./img/symbol-defs.svg#icon-in"></use>
+                              </svg>
+                        </a>
+                    </li>
+                </ul>
+      </div>
       </div>
           </footer>
   </body>

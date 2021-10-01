@@ -16,11 +16,18 @@
   --box-shadow-one: rgba(0, 0, 0, 0.12);
   --box-shadow-two: rgba(0, 0, 0, 0.14);
   --box-shadow-three: rgba(0, 0, 0, 0.2);
+  --footer-links-bg: rgba(255, 255, 255, 0.1);
 }
 
 h1,
 h2 {
   margin: 0px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+ul {
+  margin: 0;
 }
 
 p {
@@ -29,6 +36,8 @@ p {
   margin-block-end: 0;
   margin-inline-start: 0px;
   margin-inline-end: 0px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  letter-spacing: 3%;
 }
 
 hr {
@@ -61,14 +70,37 @@ body {
   height: 0;
 }
 
+
+
+
+.icons-social-links {
+  fill: var(--content-color);
+  width: 20px;
+  height: 20px;
+}
+
+
+
+
+
+
+.social-links-list {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 32px;
+  padding-right: 32px;
+  padding: 16px 32px 32px 32px;
+  flex-direction: row;
+}
+
 .section {
   justify-content: space-between;
 }
 
 .header-info {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .div-contacts {
@@ -77,13 +109,14 @@ body {
 
 .menu {
   display: flex;
-  justify-content: space-between;
-  align-content: center;
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 
 .ul-menu {
   display: flex;
   align-items: center;
+  padding-left: 0;
 }
 
 .li-menu {
@@ -93,9 +126,9 @@ body {
 
 /*head start*/
 
-.head {
-  height: 80px;
-  display: flex;
+.header {
+  border-bottom: solid var(--border-solid) 1px;
+
 }
 
 .webstudio {
@@ -117,6 +150,8 @@ body {
   font-size: 14px;
   font-weight: 500;
   display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .contacts-top:last-child {
@@ -138,11 +173,12 @@ body {
 
 .colorstudio-top {
   color: var(--black-color);
+  padding-right: 94px;
 }
 
 .li-head-button {
+  padding-right: 50px;
   display: flex;
-  margin-left: 50px;
 }
 
 .head-button {
@@ -154,6 +190,8 @@ body {
   letter-spacing: 0.02em;
   font-size: 14px;
   color: var(--h-color);
+
+  display: flex;
 }
 
 .active {
@@ -207,6 +245,7 @@ ul {
 .footer-con {
   padding-top: 60px;
   padding-bottom: 60px;
+  display: flex;
   background-color: var(--bg-color);
 }
 
@@ -279,4 +318,64 @@ display: flex;
 
 .podval {
   background-color: var(--bg-color);
+}
+
+.icons-contacts {
+  width: 16px;
+  height: 12px;
+  margin-right: 10px;
+  fill: var(--content-color);
+}
+
+.icons-contacts:hover {
+  fill: var(--hover-color);
+}
+
+
+.contacts-top:hover .icons-contacts {
+  fill: var(--hover-color);
+}
+
+.div-button-and-adress {
+  margin-right: 70px;
+}
+
+.p-join-us {
+  width: 145px;
+  height: 16px;
+  font-weight: 700;
+  line-height: 136%;
+  margin-bottom: 20px;
+  color: var(--white-color);
+  margin-top: 12px;
+}
+
+.buttons-social-links-footer {
+  padding: 0;
+  border: none;
+  border-radius: 50%;
+  width: 44px;
+  height: 44px;
+  background-color: var(--footer-links-bg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+.social-links-list-footer {
+  display: flex;
+  padding: 0px;
+
+}
+
+.icons-social-links-footer {
+  fill: var(--white-color);
+  width: 20px;
+  height: 20px;
+}
+
+.buttons-social-links-footer:hover {
+  background-color: var(--hover-color);
 }
